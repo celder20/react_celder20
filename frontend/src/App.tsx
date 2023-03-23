@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 function Introduction() {
-  return (<h1>Find your favorite NCAA Division 1 basketball team below, in honor of March Madness!</h1>);
+  return (<h1>Find your favorite NCAA Division 1 basketball team below, in honor of March Madness!!</h1>);
 }
 
 const collegeInfo = [
