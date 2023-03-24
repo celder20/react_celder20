@@ -5,6 +5,7 @@ function Introduction() {
   return (<h1>Find your favorite NCAA Division 1 basketball team below, in honor of March Madness!!</h1>);
 }
 
+//The JSON with the college info
 const collegeInfo = [
   {"tid": 159, "cid": 0, "did": 0, "school": "Boston College", "name": "Eagles", "abbrev": "BC", "pop": 161, "city": "Chestnut Hill", "state": "MA", "latitude": 42.330, "longitude": -71.166},
             {"tid": 105, "cid": 0, "did": 0, "school": "Clemson", "name": "Tigers", "abbrev": "CLEM", "pop": 215, "city": "Clemson", "state": "SC", "latitude": 34.678, "longitude": -82.839},
@@ -328,6 +329,7 @@ const collegeInfo = [
             {"tid": 287, "cid": 19, "did": 39, "school": "Houston Baptist", "name": "Huskies", "abbrev": "HBU", "pop": 33, "city": "Greater Sharpstown", "state": "TX", "latitude": 29.694 , "longitude": -95.515}  
     ]
 
+//The class that lists out the team school name, mascot, and location
 class Team extends React.Component<any, any>{
   render() {
     
@@ -343,6 +345,7 @@ class Team extends React.Component<any, any>{
   }
 }
 
+//Goes through all the JSON names
 function CollegeList() {
   return (
     <div>
@@ -351,6 +354,7 @@ function CollegeList() {
       );
 }
 
+//Main function that takes the CollegeList input and Introduction input
 function App() {
   return (
     <div className="App">
